@@ -32,11 +32,11 @@ public interface ${entityName}Interface {
     @Path("findByFilter")
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML + WsConstants.CHARSET})
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML + WsConstants.CHARSET})
-    PageResult <${entityName}Dto> findByFilter(SearchFilter searchFilter) throws RemoteException;
+    PageResult<${entityName}Dto> findByFilter(SearchFilter searchFilter) throws RemoteException;
 
     @GET
     @Path("findOne")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML + WsConstants.CHARSET})
-    WSResult <${entityName}Dto> findOne(@QueryParam("id") String id) throws RemoteException;
+    WSResult<${entityName}Dto> findOne(@QueryParam("id") String id) throws RemoteException;
 
 }
